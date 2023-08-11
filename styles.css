@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0e0e;
+    padding-top: 320px;
+}
+
+.hamburger_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    transition: all .5s ease;
+}
+.bar:not(:last-child) {
+    margin-bottom: 6px;
+}
+.bar.expanded.bar_one {
+    transform: rotate(-135deg)
+    translateY(-14px);
+}
+.bar.expanded.bar_two {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    transform: translateX(-10px);
+    background-color: #0f0e0e;
+}
+.bar.expanded.bar_three {
+    transform: rotate(135deg)
+    translateY(14px);
+}
